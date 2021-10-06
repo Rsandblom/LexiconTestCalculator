@@ -75,10 +75,10 @@ namespace LexiconCalculator
             switch (selectedOption)
             {
                 case "++":
-                    result = AdditionWithArray(numbersArray);
+                    result = Addition(numbersArray);
                     break;
                 case "--":
-                    result = SubstractionWithArray(numbersArray);
+                    result = Substraction(numbersArray);
                     break;
                 default:
                     Console.WriteLine("Something went wrong.");
@@ -89,11 +89,11 @@ namespace LexiconCalculator
 
         public static double Addition(double num1, double num2) => Math.Round(num1 + num2, 2);
 
-        public static double AdditionWithArray(double[] arrayOfNumbers) => Math.Round(arrayOfNumbers.Sum(), 2);
+        public static double Addition(double[] arrayOfNumbers) => Math.Round(arrayOfNumbers.Sum(), 2);
 
         public static double Substraction(double num1, double num2) => Math.Round(num1 - num2, 2);
 
-        public static double SubstractionWithArray(double[] arrayOfNumbers)
+        public static double Substraction(double[] arrayOfNumbers)
         {
             if (arrayOfNumbers.Length < 2)
             {

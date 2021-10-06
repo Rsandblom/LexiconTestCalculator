@@ -12,7 +12,7 @@ namespace LexiconCalculator.Test
             double expectedResult = 11;
 
             //Act 
-            double actualResult = CalculatorProgram.AdditionWithArray(arrayOfDoublesToBeSummed);
+            double actualResult = CalculatorProgram.Addition(arrayOfDoublesToBeSummed);
 
             //Assert
             Assert.Equal(expectedResult, actualResult);
@@ -27,7 +27,7 @@ namespace LexiconCalculator.Test
         public void AssertMultipleArrayAdditionMethodResults(double[] arrayOfDoublesToBeSummed, double expectedResult)
         {
             //Act 
-            double actualResult = CalculatorProgram.AdditionWithArray(arrayOfDoublesToBeSummed);
+            double actualResult = CalculatorProgram.Addition(arrayOfDoublesToBeSummed);
 
             //Assert
             Assert.Equal(expectedResult, actualResult);
@@ -42,7 +42,7 @@ namespace LexiconCalculator.Test
         public void AssertMultipleArraySubstractionMethodResults(double[] arrayOfDoublesToBeSubstracted, double expectedResult)
         {
             //Act 
-            double actualResult = CalculatorProgram.SubstractionWithArray(arrayOfDoublesToBeSubstracted);
+            double actualResult = CalculatorProgram.Substraction(arrayOfDoublesToBeSubstracted);
 
             //Assert
             Assert.Equal(expectedResult, actualResult);
